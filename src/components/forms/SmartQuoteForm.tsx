@@ -16,8 +16,8 @@ const SmartQuoteForm = () => {
         buildingHeight: '', // Altura (Fachada)
         surfaceType: '', // Tipo de superfície (Fachada)
         eventDate: '', // Data (Eventos)
-        guestCount: '' // Qtd Pessoas (Eventos),
-    towers: '',
+        guestCount: '', // Qtd Pessoas (Eventos)
+        towers: '',
         units: '',
         leisureAreas: '',
         duringEvent: ''
