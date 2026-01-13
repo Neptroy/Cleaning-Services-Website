@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShieldCheck, Star } from 'lucide-react';
 
 export default function HeroSection() {
@@ -6,15 +7,13 @@ export default function HeroSection() {
         <section className="relative w-full min-h-[90vh] flex items-center overflow-hidden bg-slate-900">
             {/* Background Image com Overlay */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/95 to-slate-900/60 z-10" />
-                {/* Placeholder image that will be replaced or is decorative */}
-                <div
-                    className="w-full h-full bg-slate-800 opacity-60"
-                    style={{
-                        backgroundImage: 'url("https://images.unsplash.com/photo-1581578731117-104f2a41272c?q=80&w=1920&auto=format&fit=crop")', // Temporary placeholder from Unsplash
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'
-                    }}
+                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-slate-900/40 z-10" />
+                <Image
+                    src="/images/hero-bg.png"
+                    alt="Limpeza Profissional de Escritório"
+                    fill
+                    priority
+                    className="object-cover object-center"
                 />
             </div>
 
@@ -41,37 +40,43 @@ export default function HeroSection() {
                     {/* CTAs */}
                     <div className="flex flex-col sm:flex-row gap-4">
                         <Link
-                            href="/contato"
+                            href="#orcamento"
                             className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-orange-600 rounded-full hover:bg-orange-700 hover:shadow-lg hover:shadow-orange-600/30 transform hover:-translate-y-0.5"
                         >
                             Pedir Orçamento Grátis
                         </Link>
 
-                        <Link
-                            href="/servicos"
+                        <button
+                            onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
                             className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-transparent border-2 border-slate-600 rounded-full hover:bg-slate-800 hover:border-slate-500"
                         >
                             Conhecer Serviços
-                        </Link>
+                        </button>
                     </div>
 
                     {/* Prova Social Rápida */}
                     <div className="mt-12 flex items-center gap-4 text-sm text-slate-400">
-                        {/* Avatars placeholder */}
                         <div className="flex -space-x-2">
-                            {[1, 2, 3, 4].map((i) => (
-                                <div key={i} className="w-8 h-8 rounded-full bg-slate-700 border-2 border-slate-900 flex items-center justify-center text-xs text-white font-bold overflow-hidden">
-                                    {/* Placeholder avatar */}
-                                    <div className="w-full h-full bg-slate-500" />
+                            {['ana', 'carlos', 'mariana'].map((name) => (
+                                <div key={name} className="w-10 h-10 rounded-full border-2 border-slate-900 overflow-hidden relative">
+                                    <Image
+                                        src={`/images/avatars/avatar-${name}.png`}
+                                        alt={`Cliente ${name}`}
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                             ))}
+                            <div className="w-10 h-10 rounded-full bg-slate-800 border-2 border-slate-900 flex items-center justify-center text-[10px] text-white font-bold">
+                                +150
+                            </div>
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col ml-2">
                             <div className="flex items-center text-yellow-400 gap-1">
                                 <Star className="w-4 h-4 fill-current" />
                                 <span className="font-bold text-white">4.9/5</span>
                             </div>
-                            <span>Mais de 150 clientes atendidos</span>
+                            <span>Satisfação garantida</span>
                         </div>
                     </div>
                 </div>
