@@ -24,14 +24,6 @@ const services = [
     serviceId: "escritorio"
   },
   {
-    title: "Limpeza de Fachadas",
-    description: "Especialistas em altura (NR-35) para vidros e ACM, garantindo a estética e conservação predial.",
-    icon: PaintBucket,
-    tag: "Especializado",
-    imageUrl: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=800&auto=format&fit=crop",
-    serviceId: "fachada"
-  },
-  {
     title: "Pós-Eventos e Obras",
     description: "Agilidade máxima para deixar seu espaço pronto para uso em tempo recorde com equipes treinadas.",
     icon: Clock,
@@ -64,7 +56,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}

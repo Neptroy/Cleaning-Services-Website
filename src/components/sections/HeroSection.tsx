@@ -22,7 +22,7 @@ export default function HeroSection() {
                     {/* Badge de Confiança */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 text-sm font-medium mb-8 backdrop-blur-sm animate-fade-in">
                         <ShieldCheck className="w-4 h-4" />
-                        <span>Empresa Certificada NR-35 e ISO 9001</span>
+                        <span>Empresa Certificada ISO 9001</span>
                     </div>
 
                     {/* Headline Principal */}

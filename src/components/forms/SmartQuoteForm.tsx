@@ -13,8 +13,6 @@ const SmartQuoteForm = () => {
         // Campos Dinâmicos
         areaSize: '', // Metragem
         frequency: '', // Frequência
-        buildingHeight: '', // Altura (Fachada)
-        surfaceType: '', // Tipo de superfície (Fachada)
         eventDate: '', // Data (Eventos)
         guestCount: '', // Qtd Pessoas (Eventos)
         towers: '',
@@ -99,27 +97,6 @@ const SmartQuoteForm = () => {
                     </div>
                 );
 
-            case 'fachada':
-                return (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fadeIn">
-                        <div>
-                            <label className="block text-sm font-medium text-slate-700 mb-1">Altura do Edifício (Andares)</label>
-                            <input type="number" name="buildingHeight" onChange={handleInputChange} className="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-teal-500 outline-none" placeholder="Ex: 15" />
-                        </div>
-                        <div>
-                            <label className="block text-sm font-medium text-slate-700 mb-1">Material da Fachada</label>
-                            <select name="surfaceType" onChange={handleInputChange} className="w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-teal-500 outline-none">
-                                <option>Vidro / Espelhada</option>
-                                <option>ACM</option>
-                                <option>Pastilha / Pedra</option>
-                                <option>Concreto Aparente</option>
-                            </select>
-                        </div>
-                        <div className="md:col-span-2 p-3 bg-yellow-50 border border-yellow-200 rounded text-sm text-yellow-800">
-                            <strong>Nota de Segurança:</strong> Nossa equipe possui certificação NR-35 para trabalho em altura.
-                        </div>
-                    </div>
-                );
 
             case 'eventos':
                 return (
@@ -156,7 +133,6 @@ const SmartQuoteForm = () => {
                 {[
                     { id: 'condominio', label: 'Condomínios', icon: Building2 },
                     { id: 'escritorio', label: 'Escritórios', icon: Briefcase },
-                    { id: 'fachada', label: 'Fachadas', icon: PaintBucket },
                     { id: 'eventos', label: 'Pós-Evento', icon: CalendarCheck },
                 ].map((service) => (
                     <button
