@@ -1,4 +1,4 @@
-# Cleaning Services Co. - Website Profissional
+# MANSKI - Website Profissional
 
 Site institucional de alto desempenho desenvolvido para empresas de limpeza e conservação, focado em conversão de leads (B2B e B2C) e SEO local.
 

@@ -112,7 +112,7 @@ export default function Home() {
       {/* Footer Placeholder */}
       <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div className="container mx-auto px-4 text-center">
-          <p>© 2024 Cleaning Services Co. - Todos os direitos reservados.</p>
+          <p>© 2024 MANSKI - Todos os direitos reservados.</p>
         </div>
       </footer>
     </main>

@@ -4,8 +4,8 @@ import SmartQuoteForm from '@/components/forms/SmartQuoteForm';
 import { ShieldCheck, CheckCircle2, HardHat } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Limpeza de Fachadas em Vidro e ACM | Certificação NR-35',
-    description: 'Especialistas em limpeza de fachadas em altura. Atendemos condomínios e empresas com segurança (NR-35), agilidade e os melhores equipamentos.',
+    title: "Limpeza de Fachadas em Altura | MANSKI",
+    description: "Serviço especializado de limpeza de vidros, ACM e pastilhas em altura. Certificação NR-35 e máxima segurança para sua fachada.",
     keywords: ['limpeza de fachada', 'limpeza de vidros em altura', 'NR-35 limpeza', 'manutenção predial', 'limpeza de ACM'],
     openGraph: {
         title: 'Limpeza de Fachadas Profissional',

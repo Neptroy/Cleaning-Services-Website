@@ -1,3 +1,4 @@
+```typescript
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleTagManager } from '@next/third-parties/google';
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cleaning Services Co.",
-  description: "Serviços de limpeza profissional para condomínios e empresas.",
+  title: "MANSKI - Limpeza Técnica e Conservação",
+  description: "Especialistas em limpeza técnica, manutenção de fachadas e conservação predial para empresas e condomínios.",
 };
 
 export default function RootLayout({
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ geistSans.variable } ${ geistMono.variable } antialiased`}
       >
         <GoogleTagManager gtmId="GTM-XXXXXXX" /> {/* Substitua pelo ID real */}
         {children}
@@ -34,3 +35,4 @@ export default function RootLayout({
     </html>
   );
 }
+```
