@@ -24,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <GoogleTagManager gtmId="GTM-XXXXXXX" /> {/* Substitua pelo ID real */}
+    <html lang="pt-br" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleTagManager gtmId="GTM-XXXXXXX" /> {/* Substitua pelo ID real */}
         {children}
       </body>
     </html>
