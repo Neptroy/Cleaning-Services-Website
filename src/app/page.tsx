@@ -12,6 +12,7 @@ const services = [
     description: "Gestão completa de limpeza para áreas comuns, torres e vidraças com foco na satisfação dos moradores.",
     icon: Building2,
     tag: "Residencial",
+    imageUrl: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
     serviceId: "condominio"
   },
   {
@@ -19,6 +20,7 @@ const services = [
     description: "Ambientes de trabalho impecáveis que aumentam a produtividade e transmitem profissionalismo.",
     icon: Briefcase,
     tag: "Corporativo",
+    imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
     serviceId: "escritorio"
   },
   {
@@ -26,6 +28,7 @@ const services = [
     description: "Especialistas em altura (NR-35) para vidros e ACM, garantindo a estética e conservação predial.",
     icon: PaintBucket,
     tag: "Especializado",
+    imageUrl: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=800&auto=format&fit=crop",
     serviceId: "fachada"
   },
   {
@@ -33,6 +36,7 @@ const services = [
     description: "Agilidade máxima para deixar seu espaço pronto para uso em tempo recorde com equipes treinadas.",
     icon: Clock,
     tag: "Agilidade",
+    imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
     serviceId: "eventos"
   }
 ];
